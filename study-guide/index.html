@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'none'; form-action 'none'; base-uri 'self'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Study Guide</title>
+<style>
+:root{--ink:#153047;--muted:#516273;--line:#c9d6df;--bg:#f3f7fa;--gold:#f4b942;--teal:#287c8e}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);line-height:1.3}
+.top{background:var(--ink);color:#fff;padding:14px clamp(16px,4vw,40px);border-bottom:6px solid var(--gold)}
+.top a{color:var(--gold);font-weight:700;text-decoration:none}
+.top .row{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.top button{font:inherit;font-weight:700;background:var(--gold);border:0;border-radius:8px;padding:9px 14px;cursor:pointer}
+.sheet{max-width:8.5in;margin:16px auto 40px;background:#fff;padding:.35in .4in;box-shadow:0 6px 20px rgba(21,48,71,.12);font-size:12.4px}
+h1{margin:0 0 2px;font-size:20px}
+.sub{color:var(--muted);margin:0 0 6px;font-size:10px}
+.name{border-bottom:1px solid #999;display:inline-block;min-width:2.2in}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:8px 14px}
+.box{border:1.5px solid var(--ink);border-radius:6px;padding:5px 7px;break-inside:avoid}
+.box h2{margin:-5px -7px 4px;padding:3px 7px;background:var(--ink);color:#fff;font-size:13px;border-radius:4px 4px 0 0}
+.box h2 span{color:var(--gold);font-weight:400;font-size:10px}
+.box h3{margin:4px 0 1px;font-size:10.5px;color:var(--teal)}
+p,ul{margin:1px 0}
+ul{padding-left:14px}
+li{margin:0}
+.formula{display:inline-block;background:#fff5d6;border:1px solid var(--gold);border-radius:4px;padding:1px 6px;font-weight:700}
+.graphs{display:flex;gap:6px;margin:3px 0}
+.graphs figure{margin:0;text-align:center;font-size:9px;flex:1}
+.graphs svg{width:100%;height:52px;display:block}
+table{border-collapse:collapse;width:100%;font-size:10px;margin:2px 0}
+td,th{border:1px solid #9fb2c0;padding:2px 4px;text-align:left;vertical-align:top}
+th{background:#e6eef3}
+.full{grid-column:1/-1}
+.tip{background:#eef6f8;border-left:3px solid var(--teal);padding:2px 5px;margin-top:3px}
+@media (max-width:700px){.cols{grid-template-columns:1fr}.sheet{font-size:13px;padding:16px}}
+@media print{
+  @page{size:letter;margin:.3in}
+  body{background:#fff}
+  .top{display:none}
+  .sheet{box-shadow:none;margin:0;padding:0;max-width:none}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style>
+</head>
+<body>
+<div class="top"><div class="row"><a href="../">&larr; All Labs</a><button onclick="window.print()">🖨️ Print (1 page)</button></div></div>
+<div class="sheet">
+  <h1>7th Grade Science: 2nd Six Weeks Study Guide</h1>
+  <p class="sub">Force &amp; Motion (7.7A–D, 6.7B) + 1st six weeks review (7.6) &nbsp;&nbsp; Name: <span class="name"></span></p>
+  <div class="cols">
+
+    <div class="box">
+      <h2>Speed &amp; Velocity <span>7.7A, 7.7B</span></h2>
+      <p><span class="formula">speed = distance ÷ time</span> &nbsp; distance = speed × time &nbsp; time = distance ÷ speed</p>
+      <ul>
+        <li>50 m in 10 s → 50 ÷ 10 = <b>5 m/s</b> &nbsp;·&nbsp; 3 m/s for 8 s → <b>24 m</b> &nbsp;·&nbsp; 20 m at 2 m/s → <b>10 s</b></li>
+        <li><b>Average speed</b> for a whole trip = <b>total</b> distance ÷ <b>total</b> time (don't average the speeds). Always include units!</li>
+        <li><b>Velocity</b> = speed + direction: "270 mph <b>west</b>" is a velocity. "180 miles in 3 hours" is only a speed.</li>
+        <li>Turning at the same speed → the velocity changes (direction changed).</li>
+        <li><b>Distance</b> = total path. <b>Displacement</b> = start to finish, with direction. 30 m east, then 10 m west → distance 40 m, displacement 20 m east. One full lap → displacement 0 m.</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h2>Distance-Time Graphs <span>7.7C</span></h2>
+      <div class="graphs">
+        <figure><svg viewBox="0 0 60 46"><path d="M6 4V40H58" fill="none" stroke="#153047" stroke-width="1.5"/><path d="M8 26H56" stroke="#287c8e" stroke-width="3"/></svg>flat = stopped</figure>
+        <figure><svg viewBox="0 0 60 46"><path d="M6 4V40H58" fill="none" stroke="#153047" stroke-width="1.5"/><path d="M8 38L56 24" stroke="#287c8e" stroke-width="3"/></svg>gentle = slow</figure>
+        <figure><svg viewBox="0 0 60 46"><path d="M6 4V40H58" fill="none" stroke="#153047" stroke-width="1.5"/><path d="M8 38L36 6" stroke="#287c8e" stroke-width="3"/></svg>steep = fast</figure>
+        <figure><svg viewBox="0 0 60 46"><path d="M6 4V40H58" fill="none" stroke="#153047" stroke-width="1.5"/><path d="M8 38L30 12L56 34" fill="none" stroke="#287c8e" stroke-width="3"/></svg>goes down = heading back to start</figure>
+        <figure><svg viewBox="0 0 60 46"><path d="M6 4V40H58" fill="none" stroke="#153047" stroke-width="1.5"/><path d="M8 38Q40 38 56 6" fill="none" stroke="#287c8e" stroke-width="3"/></svg>curving up = speeding up</figure>
+      </div>
+      <ul>
+        <li>Straight sloped line = <b>constant speed</b>. Steeper slope = greater speed.</li>
+        <li><b>Speed in a segment</b> = change in distance ÷ change in time (rose 20 m in 4 s → 5 m/s).</li>
+        <li><b>Graph from a table:</b> time on the x-axis, distance on the y-axis, plot each pair, connect the points, and add a title, labels and units.</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h2>Forces &amp; Net Force <span>6.7A, 6.7B</span></h2>
+      <p><b>Types:</b> applied (push/pull), friction (opposes motion), normal (surface pushes up), gravity (pulls down), magnetism. Force is measured in <b>newtons (N)</b>.</p>
+      <ul>
+        <li>Same direction → <b>add</b>: 10 N right + 5 N right = <b>15 N right</b></li>
+        <li>Opposite directions → <b>subtract</b>, toward the bigger side. Tug-of-war: 105 N left vs. 150 N right → <b>45 N right, unbalanced</b></li>
+        <li>Net force <b>0 N = balanced</b>. Net force not 0 = <b>unbalanced</b>.</li>
+        <li>To balance 30 N right vs. 45 N left, add <b>15 N to the right</b>.</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h2>Newton's 1st Law &amp; Inertia <span>7.7D</span></h2>
+      <p>An object at rest stays at rest, and an object in motion stays in motion at the same speed and direction, <b>unless an unbalanced force acts on it</b>.</p>
+      <ul>
+        <li><b>Balanced</b> forces → motion does NOT change: the object stays at rest <b>or</b> keeps moving at a constant speed in a straight line.</li>
+        <li><b>Unbalanced</b> forces → motion changes: starts, stops, speeds up, slows down or turns.</li>
+        <li><b>Inertia</b> = resisting changes in motion. <b>More mass = more inertia.</b></li>
+        <li>Demos: coin drops into the cup, tablecloth trick, seatbelt (your body keeps moving forward). Things slow down because of <b>friction</b>, not because they "run out of force."</li>
+      </ul>
+    </div>
+
+    <div class="box full">
+      <h2>1st Six Weeks Review <span>7.6A–E</span></h2>
+      <div class="cols" style="gap:4px 14px">
+        <ul>
+          <li><b>Element</b> = one kind of atom (Fe, O₂, He). <b>Compound</b> = two or more different elements chemically combined (H₂O, CO₂, NaCl).</li>
+          <li><b>Counting atoms:</b> the subscript counts the atom before it (no subscript = 1). H₂SO₄ → H 2 + S 1 + O 4 = <b>7 atoms</b>.</li>
+          <li><b>Physical change</b> = same substance (melting, cutting, dissolving, boiling). <b>Chemical change</b> = new substance. Signs: new gas/bubbles, color change, temperature change, light, new solid, new odor (burning, rusting, baking).</li>
+        </ul>
+        <ul>
+          <li><b>Solute</b> dissolves (salt, sugar). <b>Solvent</b> does the dissolving (water). More solute or less water = <b>more concentrated</b>. Adding water = <b>dilution</b> (the solute amount stays the same).</li>
+          <li><b>Dissolves faster</b> with higher temperature, more surface area (crushed) and agitation (stirring) because more water particles hit the solute.</li>
+          <li><b>Fair test:</b> change ONE variable and keep the others the same. Shorter time = faster.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="box full">
+      <h2>Key Vocabulary <span>from our unit word walls</span></h2>
+      <p><b>Motion:</b> change in position compared to a reference point · <b>Linear:</b> in a straight line · <b>Cardinal directions:</b> north, east, south, west · <b>Slope:</b> steepness of a graph's line · <b>Constant speed:</b> the same speed the whole time · <b>Contact force:</b> happens when objects touch (applied, friction, normal) · <b>Resting position:</b> staying in the same spot relative to another object · <b>Net force:</b> total of all forces after adding/subtracting · <b>Inertia:</b> resistance to a change in motion</p>
+    </div>
+
+  </div>
+</div>
+<script src="../shared/lab-tools.js" defer></script>
+</body>
+</html>
