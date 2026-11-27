@@ -70,7 +70,7 @@
       var dl = el("dl");
       C.words.forEach(function (w) { dl.appendChild(el("dt", null, w[0])); dl.appendChild(el("dd", null, w[1])); });
       box.appendChild(dl);
-      var h = p.querySelector("h2"); p.insertBefore(box, h ? h.nextSibling : p.firstChild);
+      var h = p.querySelector("h2"); while (h && h.parentNode !== p) h = h.parentNode; p.insertBefore(box, h ? h.nextSibling : p.firstChild);
     });
   }
 
